@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:background="#e4e4e4"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#303F9F"
+            android:id="@+id/FB"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/fb"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login using Facebook"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                android:layout_margin="16dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textSize="20sp"
+            android:id="@+id/or"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/FB"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/or"
+            android:layout_marginTop="15dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#fff"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColor="#000"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emaiSignIn"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:id="@+id/passSignIn"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginFragmentBtn"
+            android:background="#1571d3"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

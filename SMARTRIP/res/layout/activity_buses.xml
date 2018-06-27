@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:id="@+id/icons"
+        android:padding="10dp"
+        >
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/trains"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_directions_railway_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Trains"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/flights"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_flight_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Flights"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/bus"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/buses"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Buses"
+                android:textColor="#ffff"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/you"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="You"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:id="@+id/fromtolay"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fromto"
+            android:id="@+id/fromto"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fromto"
+            android:id="@+id/busSourceET"
+            android:hint="From"
+            android:background="#fff"
+            android:padding="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toRightOf="@id/fromto"
+            android:layout_below="@id/busSourceET"
+            android:background="#e4e3e3"
+            android:id="@+id/line"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fromto"
+            android:layout_below="@id/line"
+            android:hint="To"
+            android:background="#fff"
+            android:padding="10dp"
+            android:id="@+id/busDestinationET"
+
+            />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromtolay"
+        android:background="#fff"
+        android:weightSum="5"
+        android:id="@+id/DateLAy"
+        android:layout_margin="10dp"
+        >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/calender"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Select Date"
+        android:textSize="18sp"
+        android:id="@+id/datepicker"
+        />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DateLAy"
+        android:text="Search Buses"
+        android:layout_margin="10dp"
+        android:background="#1571d3"
+        android:textColor="#fff"
+        android:id="@+id/searchBusBtn"
+        />
+
+</RelativeLayout>

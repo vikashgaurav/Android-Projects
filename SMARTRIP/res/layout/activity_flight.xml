@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:id="@+id/icons"
+        android:padding="10dp"
+        >
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/trains"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_directions_railway_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Trains"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/flights"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/flight"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Flights"
+                android:textColor="#ffff"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/bus"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_directions_bus_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Buses"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/you"
+            >
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="You"
+                android:textColor="#8d8d8d"
+                />
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/icons"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="5"
+            android:id="@+id/airSearch"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/search1"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Search Flights"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="5"
+            android:id="@+id/airTrack"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/track"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Flight Tracker"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="5"
+            android:id="@+id/airFare"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/fare"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Fare Alerts"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="5"
+            android:id="@+id/airCabBooking"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/cab"
+                android:layout_margin="20dp"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Cab Booking"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:weightSum="5"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/airTrip"
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/trip"
+                android:layout_margin="16dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:text="Book Your Trip"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

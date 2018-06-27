@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IndiGo"
+        android:id="@+id/userflightName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/userflightName"
+        android:text="6E 6612"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/userflightNo"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_below="@id/userflightName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/lay"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1"
+            android:text="New Delhi"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="right"
+            android:id="@+id/usersourceFlight"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="->"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1"
+            android:text="Patna"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="left"
+            android:id="@+id/userdestinationFlight"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay"
+        android:text="05:35"
+        android:id="@+id/usersourceFlightTime"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay"
+        android:layout_toRightOf="@id/usersourceFlightTime"
+        android:text="->"
+        android:id="@+id/arrow"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay"
+        android:layout_toRightOf="@id/arrow"
+        android:text="06:50"
+        android:id="@+id/userdestinationFlightTime"
+        android:layout_marginLeft="10dp"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usersourceFlightTime"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tableLAy"
+        >
+        <TableRow>
+
+            <TextView
+                android:text="S"
+                android:id="@+id/usunF"
+                />
+
+            <TextView
+                android:text="M"
+                android:id="@+id/umonF"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:text="T"
+                android:id="@+id/utueF"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:text="W"
+                android:id="@+id/uwedF"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:text="T"
+                android:id="@+id/uthuF"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:text="F"
+                android:id="@+id/ufriF"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:text="S"
+                android:id="@+id/usatF"
+                android:layout_marginLeft="4dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLAy"
+        android:text="₹"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rupees"
+        android:textColor="#000"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="225"
+        android:textColor="#000"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/userfareFlight"
+        android:layout_alignBaseline="@+id/rupees"
+        android:layout_alignBottom="@+id/rupees"
+        android:layout_toRightOf="@+id/rupees"/>
+
+
+</RelativeLayout>

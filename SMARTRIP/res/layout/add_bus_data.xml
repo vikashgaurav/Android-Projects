@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show List"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addShowBusListBtn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/addShowBusListBtn"
+        android:id="@+id/addBusBtn"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addBusBtn"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Travel Agency Name"
+                android:inputType="text"
+                android:id="@+id/addAgencyName"
+                android:padding="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bus Type"
+                android:inputType="text"
+                android:id="@+id/addBusType"
+                android:padding="16dp"
+                android:textSize="18sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="From"
+                android:inputType="text"
+                android:id="@+id/addBusFrom"
+                android:padding="16dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To"
+                android:inputType="text"
+                android:id="@+id/addBusTo"
+                android:padding="16dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.4"
+                    android:hint="Start Time"
+                    android:textSize="19sp"
+                    android:textColor="#000"
+                    android:id="@+id/addStartBustTime"
+                    android:padding="16dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="||"
+                    android:textSize="19sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.4"
+                    android:hint="End Time"
+                    android:textSize="19sp"
+                    android:textColor="#000"
+                    android:id="@+id/addEndBusTime"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Time"
+                android:inputType="number"
+                android:id="@+id/addBusTotalTime"
+                android:padding="16dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bus Fare"
+                android:inputType="number"
+                android:id="@+id/addBusFare"
+                android:padding="16dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available Seats"
+                android:inputType="number"
+                android:id="@+id/addBusSeatAvailabe"
+                android:padding="16dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

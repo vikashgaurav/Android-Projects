@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_train_mid_stations"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trainsSpinner"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mid Station"
+        android:textColor="#000"
+        android:id="@+id/midstationET"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Distnace From Source"
+        android:textColor="#000"
+        android:id="@+id/totalTimeET"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Time From Source"
+        android:textColor="#000"
+        android:id="@+id/totalKmsET"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Mid Station"
+        android:layout_marginTop="16dp"
+        android:background="#1571d3"
+        android:textColor="#fff"
+        android:id="@+id/addmidBTn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Mid Stations"
+        android:layout_marginTop="16dp"
+        android:background="#1571d3"
+        android:textColor="#fff"
+        android:id="@+id/showMidStnBTn"
+        />
+
+</LinearLayout>

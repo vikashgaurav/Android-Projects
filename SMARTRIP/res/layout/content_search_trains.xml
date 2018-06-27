@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_search_trains"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grv.vikash.smartrip.Activity_Train.SearchTrains"
+    tools:showIn="@layout/activity_search_trains">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="10dp"
+        android:id="@+id/fromtolay"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fromto"
+            android:id="@+id/fromto"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="5dp"
+            />
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fromto"
+            android:id="@+id/fromTrain"
+            android:hint="From"
+            android:background="#fff"
+            android:padding="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_toRightOf="@id/fromto"
+            android:layout_below="@id/fromTrain"
+            android:background="#e4e3e3"
+            android:id="@+id/line"
+            />
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fromto"
+            android:layout_below="@id/line"
+            android:hint="To"
+            android:background="#fff"
+            android:padding="10dp"
+            android:id="@+id/toTrain"
+            />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromtolay"
+        android:background="#fff"
+        android:weightSum="5"
+        android:id="@+id/DateLAy"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/calender"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="Select Date"
+            android:textSize="18sp"
+            android:id="@+id/datepickerTrain"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DateLAy"
+        android:text="Search Trains"
+        android:layout_margin="10dp"
+        android:background="#1571d3"
+        android:textColor="#fff"
+        android:id="@+id/searchBtnTrain"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBtnTrain"
+        android:id="@+id/listViewSearchTrain"
+        >
+
+    </ListView>
+
+</RelativeLayout>

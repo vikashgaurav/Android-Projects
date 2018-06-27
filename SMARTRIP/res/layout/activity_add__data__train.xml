@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add__data__train"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grv.vikash.smartrip.ForAdmin.Add_Data_Train"
+    >
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show List"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addShowTrainListBtn"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add mid Station"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/addShowTrainListBtn"
+        android:id="@+id/addMidStationBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/addShowTrainListBtn"
+        android:layout_toLeftOf="@id/addMidStationBtn"
+        android:id="@+id/addTrainBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/addTrainBtn"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train No"
+        android:inputType="number"
+        android:id="@+id/addTrainNo"
+        android:maxLength="5"
+        android:padding="16dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train Name"
+        android:inputType="text"
+        android:id="@+id/addTrainName"
+        android:padding="16dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From"
+        android:inputType="text"
+        android:id="@+id/addTrainFrom"
+        android:padding="16dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        android:inputType="text"
+        android:id="@+id/addTrainTo"
+        android:padding="16dp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:hint="Start Time"
+            android:textSize="19sp"
+            android:textColor="#000"
+            android:id="@+id/addStartTrainTime"
+            android:padding="16dp"
+            />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="->"
+                android:textSize="19sp"
+                />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:hint="Total Time"
+            android:textSize="19sp"
+            android:textColor="#000"
+            android:id="@+id/addTotalTrainTime"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Fare "
+        android:id="@+id/addTotalKms"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Days"
+        android:textSize="20sp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:id="@+id/addDays_Sun"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:id="@+id/addDays_Mon"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:id="@+id/addDays_Tue"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:id="@+id/addDays_Wed"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:id="@+id/addDays_Thu"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/addDays_Fri"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:id="@+id/addDays_Sat"
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

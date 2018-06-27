@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grv.vikash.smartrip">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="asd" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Flight" />
+        <activity android:name=".Activity.Buses" />
+        <activity android:name=".Activity.You" />
+        <activity
+            android:name=".Activity_Train.SearchTrains"
+            android:label="@string/title_activity_search_trains"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Train.PNR_Stat"
+            android:label="@string/title_activity_pnr__stat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Train.Running_Stat"
+            android:label="@string/title_activity_running__stat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Train.Seat_Calender"
+            android:label="@string/title_activity_seat__calender"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Train.Train_By_No"
+            android:label="@string/title_activity_train__by__no"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Train.Offline_Routes"
+            android:label="@string/title_activity_offline__routes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_Flights.Search_Flights"
+            android:label="@string/title_activity_search__flights"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_You.SignIn_Register"
+            android:label="@string/title_activity_sign_in__register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForAdmin.Admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForAdmin.Add_Data_Train" />
+        <activity android:name=".ForAdmin.Train_List" />
+        <activity
+            android:name=".Activity_Train.Seat_Map"
+            android:label="@string/title_activity_seat__map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForAdmin.Flight_List" />
+        <activity android:name=".ForAdmin.AddFlightData" />
+        <activity android:name=".ForAdmin.Admin_Login" />
+        <activity android:name=".ForAdmin.train_mid_stations" />
+        <activity android:name=".ForAdmin.MidStationList" />
+        <activity android:name=".Activity_Train.SleeperMap" />
+        <activity android:name=".Activity_Train.AcOneMap" />
+        <activity android:name=".Activity_Train.AcTwoMap" />
+        <activity android:name=".Activity_Train.AcThreeMap" />
+        <activity android:name=".Activity_Train.SeatingMap" />
+        <activity android:name=".ForAdmin.AddBusData" />
+        <activity android:name=".ForAdmin.BusList" />
+        <activity android:name=".Activity_You.Settings" />
+        <activity android:name=".Activity_You.Support" />
+        <activity android:name=".ForAdmin.UserFeedback" />
+        <activity android:name=".Activity.AlarmActi" />
+        <activity android:name=".Activity_Buses.UserBusList" />
+        <activity android:name=".Activity_Flights.userFlightList" />
+        <activity android:name=".Activity_Flights.FlightTracker" />
+        <activity android:name=".Activity_Flights.FlightBooking" />
+        <activity android:name=".Activity_Flights.CabBooking" />
+        <activity android:name=".Activity_Flights.FareAlerts" />
+        <activity android:name=".Activity_Train.TrainBooking" />
+        <activity android:name=".Activity_Train.RunningTrain" />
+        <activity android:name=".Activity_Train.PNRStatus" />
+        <activity android:name=".Activity_Train.SeatCalender"></activity>
+    </application>
+
+</manifest>

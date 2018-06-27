@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Smartrip</string>
+    <string name="title_activity_search_trains">SearchTrains</string>
+    <string name="title_activity_pnr__stat">PNR_Stat</string>
+    <string name="title_activity_running__stat">Running_Stat</string>
+    <string name="title_activity_seat__calender">Seat_Calender</string>
+    <string name="title_activity_train__by__no">Train_By_No</string>
+    <string name="title_activity_offline__routes">Offline_Routes</string>
+    <string name="title_activity_search__flights">Search Flights</string>
+    <string name="title_activity_sign_in__register">Sign in</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="title_activity_seat__map">Seat Map</string>
+
+    <string-array name="country">
+        <item>"Select Country"</item>
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>India</item>
+        <item>Singapore</item>
+        <item>United Kingdom</item>
+        <item>United State</item>
+    </string-array>
+
+    <string-array name="rupees">
+        <item>"Select Currency"</item>
+        <item>EUR</item>
+        <item>INR</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="issues">
+        <item>"Select Issues"</item>
+        <item>Services</item>
+        <item>Trains</item>
+        <item>Air</item>
+        <item>Buses</item>
+        <item>Local</item>
+    </string-array>
+
+</resources>
